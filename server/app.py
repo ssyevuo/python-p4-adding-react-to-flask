@@ -1,4 +1,5 @@
 from flask import Flask, request, make_response, jsonify
+# Cross-Origin Resource Sharing
 from flask_cors import CORS
 from flask_migrate import Migrate
 

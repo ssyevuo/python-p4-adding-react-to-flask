@@ -7,6 +7,7 @@ function NewMessage({ currentUser, onAddMessage }) {
     e.preventDefault();
 
     fetch("http://127.0.0.1:5555/messages", {
+      // if we are using anything other that GET we need to specify in fetch
       method: "POST",
       headers: {
         "Content-Type": "application/json",
